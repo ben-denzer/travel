@@ -1,3 +1,5 @@
+import { COMPANY_NAME, LOGO_URL } from '@/CONFIG';
+
 export default function Footer() {
   const footerNavigation = {
     social: [
@@ -56,13 +58,9 @@ export default function Footer() {
     <footer className="mt-32 sm:mt-32">
       <div className="mx-auto max-w-7xl border-t border-gray-200 px-6 pt-16 pb-8 sm:pt-24 lg:px-8 lg:pt-16">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
-          <img
-            alt="Company name"
-            src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
-            className="h-9"
-          />
+          <img alt={COMPANY_NAME} src={LOGO_URL} className="h-20" />
         </div>
-        <div className="mt-16 border-t border-gray-900/10 pt-8 sm:mt-20 lg:mt-24 lg:flex lg:items-center lg:justify-between border-white/10">
+        <div className="mt-8 border-t border-gray-900/10 pt-8 lg:flex lg:items-center lg:justify-between border-white/10">
           <div>
             <h3 className="text-sm/6 font-semibold text-gray-900 ">
               Subscribe to our newsletter
@@ -109,7 +107,8 @@ export default function Footer() {
             ))}
           </div>
           <p className="mt-8 text-sm/6 text-gray-600 md:order-1 md:mt-0 ">
-            &copy; 2024 Your Company, Inc. All rights reserved.
+            &copy; {new Date().getFullYear()} {COMPANY_NAME}. All rights
+            reserved.
           </p>
         </div>
       </div>
