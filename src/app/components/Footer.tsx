@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { COMPANY_NAME, LOGO_URL } from '@/CONFIG';
 
 export default function Footer() {
@@ -60,7 +61,7 @@ export default function Footer() {
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <img alt={COMPANY_NAME} src={LOGO_URL} className="h-20" />
         </div>
-        <div className="mt-8 border-t border-gray-900/10 pt-8 lg:flex lg:items-center lg:justify-between border-white/10">
+        <div className="mt-8 border-t border-gray-900/10 pt-8 lg:flex lg:items-center lg:justify-between">
           <div>
             <h3 className="text-sm/6 font-semibold text-gray-900 ">
               Subscribe to our newsletter
@@ -81,19 +82,19 @@ export default function Footer() {
               required
               placeholder="Enter your email"
               autoComplete="email"
-              className="w-full min-w-0 rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder: focus:outline-2 focus:-outline-offset-2 focus-visible:outline-indigo-600 sm:w-56 sm:text-sm/6 bg-white/5  outline-gray-700 placeholder:text-gray-500 focus-visible:outline-indigo-500"
+              className="w-full min-w-0 rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder: focus:outline-2 focus:-outline-offset-2 focus-visible:outline-indigo-600 sm:w-56 sm:text-sm/6 placeholder:text-gray-500"
             />
             <div className="mt-4 sm:mt-0 sm:ml-4 sm:shrink-0">
               <button
                 type="submit"
-                className="flex w-full items-center justify-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold  shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 bg-indigo-500 hover:bg-indigo-400 focus-visible:outline-indigo-500"
+                className="flex w-full items-center justify-center rounded-md text-background bg-indigo-600 px-3 py-2 text-sm font-semibold  shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Subscribe
               </button>
             </div>
           </form>
         </div>
-        <div className="mt-8 border-t border-gray-900/10 pt-8 md:flex md:items-center md:justify-between border-white/10">
+        <div className="mt-8 border-t border-gray-900/10 pt-8 md:flex md:items-center md:justify-between">
           <div className="flex gap-x-6 md:order-2">
             {footerNavigation.social.map((item) => (
               <a

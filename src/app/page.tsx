@@ -1,61 +1,51 @@
+/* eslint-disable @next/next/no-img-element */
 import {
-  ArrowPathIcon,
-  ChevronRightIcon,
-  CloudArrowUpIcon,
-  LockClosedIcon,
-  ServerIcon,
+  BriefcaseIcon,
+  BuildingOffice2Icon,
+  CalendarDaysIcon,
+  CreditCardIcon,
+  ShieldCheckIcon,
 } from '@heroicons/react/20/solid';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
-const primaryFeatures = [
+const benefitList = [
   {
-    name: 'Push to deploy.',
+    name: '1,000,000+ Properties',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit aute id magna.',
-    icon: CloudArrowUpIcon,
+      'Save on all top hotel and resort brands anywhere in the world.',
+    icon: BuildingOffice2Icon,
   },
   {
-    name: 'SSL certificates.',
+    name: 'Reward Credits',
     description:
-      'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.',
-    icon: LockClosedIcon,
+      'Earn reward credits on every purchase you make, and use them to book travel.',
+    icon: CreditCardIcon,
   },
   {
-    name: 'Database backups.',
+    name: 'Value Guarantee',
     description:
-      'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus.',
-    icon: ServerIcon,
-  },
-];
-const secondaryFeatures = [
-  {
-    name: 'Push to deploy',
-    description:
-      'Commodo nec sagittis tortor mauris sed. Turpis tortor quis scelerisque diam id accumsan nullam tempus. Pulvinar etiam lacus volutpat eu. Phasellus praesent ligula sit faucibus.',
-    href: '#',
-    icon: CloudArrowUpIcon,
+      'If you find a hotel cheaper online, we promise to credit you 110% of the difference.',
+    icon: ShieldCheckIcon,
   },
   {
-    name: 'SSL certificates',
+    name: 'Marketplace',
     description:
-      'Pellentesque enim a commodo malesuada turpis eleifend risus. Facilisis donec placerat sapien consequat tempor fermentum nibh.',
-    href: '#',
-    icon: LockClosedIcon,
+      'Rent or bid on weekly stay vacations. Make an offer for a price you want to pay.',
+    icon: BriefcaseIcon,
   },
   {
-    name: 'Simple queues',
+    name: 'Weekly Stay',
     description:
-      'Pellentesque sit elit congue ante nec amet. Dolor aenean curabitur viverra suspendisse iaculis eget. Nec mollis placerat ultricies euismod ut condimentum.',
-    href: '#',
-    icon: ArrowPathIcon,
+      'Save big when you book a week. Stay for up to 7 nights in a condo starting at $99.',
+    icon: CalendarDaysIcon,
   },
 ];
+
 const featuredTestimonial = {
-  body: 'Integer id nunc sit semper purus. Bibendum at lacus ut arcu blandit montes vitae auctor libero. Hac condimentum dignissim nibh vulputate ut nunc. Amet nibh orci mi venenatis blandit vel et proin. Non hendrerit in vel ac diam.',
+  body: 'I usually stress about planning trips, but this time everything felt effortless. Great deals, smooth booking, and the savings made it even sweeter.',
   author: {
     name: 'Brenna Goyette',
-    handle: 'brennagoyette',
     imageUrl:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=1024&h=1024&q=80',
     logoUrl:
@@ -66,43 +56,37 @@ const testimonials = [
   [
     [
       {
-        body: 'Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.',
+        body: "I couldn't believe how easy it was to book my hotel. The whole process took minutes, and the price was lower than anywhere else I checked!",
         author: {
           name: 'Leslie Alexander',
-          handle: 'lesliealexander',
           imageUrl:
             'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
         },
       },
       {
-        body: 'Quia dolorem qui et. Atque quo aliquid sit eos officia. Dolores similique laboriosam quaerat cupiditate.',
+        body: "I saved over $300 on my family's vacation package. We stayed at a beautiful resort and still had extra cash to spend on activities",
         author: {
           name: 'Michael Foster',
-          handle: 'michaelfoster',
           imageUrl:
             'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
         },
       },
     ],
-    [],
   ],
   [
-    [],
     [
       {
-        body: 'Molestias ea earum quos nostrum doloremque sed. Quaerat quasi aut velit incidunt excepturi rerum voluptatem minus harum.',
+        body: 'Booking a rental car was a breeze. I got exactly what I needed, and it cost way less than what the big-name sites were offering.',
         author: {
           name: 'Leonard Krasner',
-          handle: 'leonardkrasner',
           imageUrl:
             'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
         },
       },
       {
-        body: 'Architecto libero natus est. Est quam debitis officia enim atque et ut non. Sunt reiciendis quasi eaque. Itaque error ut et.',
+        body: "The resort was absolutely stunning. From the ocean view to the staff, everything exceeded my expectations. I'll definitely book again!",
         author: {
           name: 'Floyd Miles',
-          handle: 'floydmiles',
           imageUrl:
             'https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
         },
@@ -122,7 +106,7 @@ export default function HomepageContent() {
       <main>
         {/* Hero section */}
         <div className="relative isolate pt-14">
-          <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-40">
+          <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:flex lg:items-center lg:gap-x-10 lg:px-8">
             <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
               <h1 className="mt-10 text-5xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-6xl ">
                 Travel and lifestyle benefits are within your reach
@@ -134,7 +118,7 @@ export default function HomepageContent() {
               <div className="mt-10 flex items-center gap-x-6">
                 <a
                   href="#"
-                  className="rounded-md bg-highlight-600 text-background px-3.5 py-2.5 text-sm font-semibold  shadow-xs hover:bg-highlight-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-highlight-600 bg-highlight-500 hover:bg-highlight-400 focus-visible:outline-highlight-500"
+                  className="rounded-md bg-highlight-600 text-background px-3.5 py-2.5 text-sm font-semibold  shadow-xs hover:bg-highlight-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-highlight-600"
                 >
                   Get started
                 </a>
@@ -143,97 +127,33 @@ export default function HomepageContent() {
                 </a>
               </div>
             </div>
-            <div className="mt-16 sm:mt-24 lg:mt-0 lg:shrink-0 lg:grow">
+            <div className="hidden lg:mt-0 lg:shrink-0 lg:grow lg:block">
               <img
                 alt="Traveling Worldwide"
                 src="/tiles.png"
-                className="w-full h-auto"
+                className="w-full h-auto max-w-[450px]"
               />
             </div>
           </div>
         </div>
 
-        {/* Logo cloud */}
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-12 opacity-40 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-            <img
-              alt="Transistor"
-              src="https://tailwindcss.com/plus-assets/img/logos/158x48/transistor-logo-gray-900.svg"
-              width={158}
-              height={48}
-              className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-            />
-
-            <img
-              alt="Reform"
-              src="https://tailwindcss.com/plus-assets/img/logos/158x48/reform-logo-gray-900.svg"
-              width={158}
-              height={48}
-              className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-            />
-
-            <img
-              alt="Tuple"
-              src="https://tailwindcss.com/plus-assets/img/logos/158x48/tuple-logo-gray-900.svg"
-              width={158}
-              height={48}
-              className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-            />
-
-            <img
-              alt="SavvyCal"
-              src="https://tailwindcss.com/plus-assets/img/logos/158x48/savvycal-logo-gray-900.svg"
-              width={158}
-              height={48}
-              className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
-            />
-
-            <img
-              alt="Statamic"
-              src="https://tailwindcss.com/plus-assets/img/logos/158x48/statamic-logo-gray-900.svg"
-              width={158}
-              height={48}
-              className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
-            />
-          </div>
-        </div>
-
-        {/* Feature section */}
-        <div className="mx-auto mt-32 max-w-7xl sm:mt-56 sm:px-6 lg:px-8">
-          <div className="relative isolate overflow-hidden bg-gray-900 px-6 py-20 sm:rounded-3xl sm:px-10 sm:py-24 lg:py-24 xl:px-24 bg-gray-800/50 after:pointer-events-none after:absolute after:inset-0 after:inset-ring after:inset-ring-white/10 after:sm:rounded-3xl">
+        <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
+          <div className="relative isolate overflow-hidden bg-gray-900 px-6 py-20 sm:rounded-3xl sm:px-10 sm:py-24 lg:py-24 xl:px-24 after:pointer-events-none after:absolute after:inset-0 after:inset-ring after:inset-ring-white/10 after:sm:rounded-3xl">
             <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-center lg:gap-y-0">
+              <video
+                controls
+                className="relative w-full max-w-xl rounded-xl shadow-xl ring-1 ring-white/10 lg:row-span-4 lg:w-5xl lg:row-start-1 lg:max-w-md"
+              >
+                <source src="/plane.mp4" type="video/mp4" />
+              </video>
               <div className="lg:row-start-2 lg:max-w-md">
-                <h2 className="text-3xl font-semibold tracking-tight text-balance  sm:text-4xl">
-                  Boost your productivity. Start using our app today.
+                <h2 className="text-3xl font-semibold tracking-tight text-balance text-background sm:text-4xl">
+                  Unlock massive savings
                 </h2>
                 <p className="mt-6 text-lg/8 text-gray-300">
-                  Ac euismod vel sit maecenas id pellentesque eu sed
-                  consectetur. Malesuada adipiscing sagittis vel nulla. Ac
-                  euismod vel sit maecenas.
+                  Exclusive deals you won&apos;t want to miss. Sign up now to
+                  keep more in your pocket.
                 </p>
-              </div>
-              <img
-                alt="Product screenshot"
-                src="https://tailwindcss.com/plus-assets/img/component-images/dark-project-app-screenshot.png"
-                width={2432}
-                height={1442}
-                className="relative -z-20 max-w-xl min-w-full rounded-xl shadow-xl ring-1 ring-white/10 lg:row-span-4 lg:w-5xl lg:max-w-none"
-              />
-              <div className="max-w-xl lg:row-start-3 lg:mt-10 lg:max-w-md lg:border-t lg:border-white/10 lg:pt-10">
-                <dl className="max-w-xl space-y-8 text-base/7 text-gray-300 lg:max-w-none">
-                  {primaryFeatures.map((feature) => (
-                    <div key={feature.name} className="relative">
-                      <dt className="ml-9 inline-block font-semibold ">
-                        <feature.icon
-                          aria-hidden="true"
-                          className="absolute top-1 left-1 size-5 text-highlight-500 text-highlight-400"
-                        />
-                        {feature.name}
-                      </dt>{' '}
-                      <dd className="inline">{feature.description}</dd>
-                    </div>
-                  ))}
-                </dl>
               </div>
             </div>
             <div
@@ -245,48 +165,29 @@ export default function HomepageContent() {
                   clipPath:
                     'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
                 }}
-                className="aspect-1155/678 w-288.75 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-25 opacity-20"
+                className="aspect-1155/678 w-288.75 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-25"
               />
             </div>
           </div>
         </div>
 
-        {/* Feature section */}
-        <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-56 lg:px-8">
-          <div className="mx-auto max-w-2xl lg:text-center">
-            <h2 className="text-base/7 font-semibold text-highlight-600 text-highlight-400">
-              Deploy faster
-            </h2>
-            <p className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl lg:text-balance ">
-              Everything you need to deploy your app
-            </p>
-            <p className="mt-6 text-lg/8 text-gray-600 text-gray-300">
-              Quis tellus eget adipiscing convallis sit sit eget aliquet quis.
-              Suspendisse eget egestas a elementum pulvinar et feugiat blandit
-              at. In mi viverra elit nunc.
-            </p>
-          </div>
-          <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
-            <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
-              {secondaryFeatures.map((feature) => (
-                <div key={feature.name} className="flex flex-col">
+        <div className="mx-auto mt-32 max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto max-w-2xl lg:max-w-none">
+            <dl className="flex flex-wrap justify-center gap-8">
+              {benefitList.map((feature) => (
+                <div
+                  key={feature.name}
+                  className="flex flex-col w-sm rounded-lg bg-white px-4 py-5 shadow-md sm:p-6"
+                >
                   <dt className="flex items-center gap-x-3 text-base/7 font-semibold text-gray-900 ">
                     <feature.icon
                       aria-hidden="true"
-                      className="size-5 flex-none text-highlight-600 text-highlight-400"
+                      className="size-5 flex-none text-highlight-600"
                     />
                     {feature.name}
                   </dt>
                   <dd className="mt-4 flex flex-auto flex-col text-base/7 text-gray-600 ">
                     <p className="flex-auto">{feature.description}</p>
-                    <p className="mt-6">
-                      <a
-                        href={feature.href}
-                        className="text-sm/6 font-semibold text-highlight-600 hover:text-highlight-500 text-highlight-400 hover:text-highlight-300"
-                      >
-                        Learn more <span aria-hidden="true">→</span>
-                      </a>
-                    </p>
                   </dd>
                 </div>
               ))}
@@ -295,14 +196,13 @@ export default function HomepageContent() {
         </div>
 
         {/* Newsletter section */}
-        <div className="mx-auto mt-32 max-w-7xl sm:mt-56 sm:px-6 lg:px-8">
-          <div className="relative isolate overflow-hidden bg-gray-900 px-6 py-24 shadow-2xl sm:rounded-3xl sm:px-24 xl:py-32 bg-gray-800 shadow-none after:pointer-events-none after:absolute after:inset-0 after:inset-ring after:inset-ring-white/15 after:sm:rounded-3xl">
+        <div className="mx-auto mt-32 max-w-7xl sm:px-6 lg:px-8">
+          <div className="relative isolate overflow-hidden px-6 py-24 shadow-2xl sm:rounded-3xl sm:px-24 xl:py-32 bg-gray-800 after:pointer-events-none after:absolute after:inset-0 after:inset-ring after:inset-ring-white/15 after:sm:rounded-3xl">
             <h2 className="mx-auto max-w-3xl text-center text-4xl font-semibold tracking-tight text-background sm:text-5xl">
-              Get notified when we're launching
+              Total Member Savings: $147,426,588 USD
             </h2>
             <p className="mx-auto mt-6 max-w-lg text-center text-lg text-gray-300">
-              Reprehenderit ad esse et non officia in nulla. Id proident tempor
-              incididunt nostrud nulla et culpa.
+              Get started today.
             </p>
             <form className="mx-auto mt-10 flex max-w-md gap-x-4">
               <label htmlFor="email-address" className="sr-only">
@@ -315,13 +215,13 @@ export default function HomepageContent() {
                 required
                 placeholder="Enter your email"
                 autoComplete="email"
-                className="min-w-0 flex-auto rounded-md bg-white/5 px-3.5 py-2 text-base  outline-1 -outline-offset-1 outline-white/10 placeholder:text-background focus:outline-2 focus:-outline-offset-2 focus:outline-highlight-500 sm:text-sm/6 outline-white/20"
+                className="min-w-0 flex-auto rounded-md bg-white/5 px-3.5 py-2 text-background  outline-1 -outline-offset-1 placeholder:text-background focus:outline-2 focus:-outline-offset-2 focus:outline-highlight-500 sm:text-sm/6 outline-white/20"
               />
               <button
                 type="submit"
-                className="flex-none rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-xs hover:bg-gray-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white shadow-none"
+                className="cursor-pointer flex-none rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 hover:bg-gray-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white shadow-none"
               >
-                Notify me
+                Get Started
               </button>
             </form>
             <svg
@@ -354,7 +254,7 @@ export default function HomepageContent() {
         </div>
 
         {/* Testimonials section */}
-        <div className="relative isolate mt-32 sm:pt-32">
+        <div className="relative isolate mt-32">
           <div className="relative">
             <div
               aria-hidden="true"
@@ -381,36 +281,30 @@ export default function HomepageContent() {
               />
             </div>
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
-              <div className="mx-auto max-w-2xl text-center">
-                <h2 className="text-base/7 font-semibold text-highlight-600 text-highlight-400">
+              <div className="mx-auto max-w-4xl text-center">
+                <h2 className="text-base/7 font-semibold text-highlight-400">
                   Testimonials
                 </h2>
                 <p className="mt-2 text-4xl font-semibold tracking-tight text-balance text-gray-900 sm:text-5xl ">
-                  We have worked with thousands of amazing people
+                  Real stories from happy customers
                 </p>
               </div>
-              <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm/6 text-gray-900 sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4 text-gray-100">
-                <figure className="rounded-2xl bg-white shadow-lg ring-1 ring-gray-900/5 sm:col-span-2 xl:col-start-2 xl:row-end-1 bg-gray-800/75 shadow-none ring-white/10">
+              <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm/6 text-gray-900 sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
+                <figure className="rounded-2xl bg-white shadow-lg ring-1 ring-gray-900/5 sm:col-span-2 xl:col-start-2 xl:row-end-1">
                   <blockquote className="p-6 text-lg font-semibold tracking-tight text-gray-900 sm:p-12 sm:text-xl/8 ">
                     <p>{`“${featuredTestimonial.body}”`}</p>
                   </blockquote>
-                  <figcaption className="flex flex-wrap items-center gap-x-4 gap-y-4 border-t border-gray-900/10 px-6 py-4 sm:flex-nowrap border-white/10">
+                  <figcaption className="flex flex-wrap items-center gap-x-4 gap-y-4 border-t border-gray-900/10 px-6 py-4 sm:flex-nowrap">
                     <img
                       alt=""
                       src={featuredTestimonial.author.imageUrl}
-                      className="size-10 flex-none rounded-full bg-gray-50 bg-gray-700"
+                      className="size-10 flex-none rounded-full bg-gray-50"
                     />
                     <div className="flex-auto">
                       <div className="font-semibold text-gray-900 ">
                         {featuredTestimonial.author.name}
                       </div>
-                      <div className="text-gray-600 ">{`@${featuredTestimonial.author.handle}`}</div>
                     </div>
-                    <img
-                      alt=""
-                      src={featuredTestimonial.author.logoUrl}
-                      className="h-10 w-auto flex-none"
-                    />
                   </figcaption>
                 </figure>
                 {testimonials.map((columnGroup, columnGroupIdx) => (
@@ -430,25 +324,24 @@ export default function HomepageContent() {
                           'space-y-8'
                         )}
                       >
-                        {column.map((testimonial) => (
+                        {column.map((testimonial, i) => (
                           <figure
-                            key={testimonial.author.handle}
-                            className="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5 bg-gray-800/75 shadow-none ring-white/10"
+                            key={i}
+                            className="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-white/10"
                           >
                             <blockquote className="text-gray-900 ">
-                              <p>{`“${testimonial.body}”`}</p>
+                              <p>{`"${testimonial.body}"`}</p>
                             </blockquote>
                             <figcaption className="mt-6 flex items-center gap-x-4">
                               <img
                                 alt=""
                                 src={testimonial.author.imageUrl}
-                                className="size-10 rounded-full bg-gray-50 bg-gray-700"
+                                className="size-10 rounded-full bg-gray-50"
                               />
                               <div>
                                 <div className="font-semibold text-gray-900 ">
                                   {testimonial.author.name}
                                 </div>
-                                <div className="text-gray-600 ">{`@${testimonial.author.handle}`}</div>
                               </div>
                             </figcaption>
                           </figure>
